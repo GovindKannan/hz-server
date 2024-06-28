@@ -1,0 +1,11 @@
+spring.application.name: hazelcast-server
+server.port: 20001
+
+stripe: local
+
+spring:
+  application:
+    name: hazelcast-server
+  hazelcast:
+    config: classpath:hazelcast-${stripe}.yml
+

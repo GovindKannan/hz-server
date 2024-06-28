@@ -1,0 +1,17 @@
+hazelcast:
+  cluster-name: my-cluster
+#  license-key: Your Hazelcast Enterprise or Enterprise HD License Key
+  instance-name: hzInstance1
+  network:
+    port:
+      auto-increment: true
+      port-count: 100
+      port: 10001
+    reuse-address: false
+    join:
+      multicast:
+        enabled: false
+      tcp-ip:
+        enabled: true
+        member-list:
+          - localhost
